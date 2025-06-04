@@ -884,16 +884,14 @@ def main():
     try:
         # Configuration
         states_to_process = [
-            "Himachal Pradesh(96)",
-            "Karnataka(68)", "Assam(33)", "Bihar(48)",
-            "Madhya Pradesh(53)", 
-            "Chandigarh(1)", "Chhattisgarh(31)", "Delhi(16)",
-            "Goa(13)", "Gujarat(37)", "Jammu and Kashmir(21)",
-            "Jharkhand(25)", "Kerala(87)", "Ladakh(3)", "Lakshadweep(5)",
-            "Manipur(13)", "Meghalaya(13)", "Mizoram(10)",
-            "Nagaland(9)", "Odisha(39)", "Puducherry(8)", 
-            "Uttarakhand(21)", 
-            "UT of DNH and DD(3)", "Andaman & Nicobar Island(3)", "Sikkim(9)", "Tripura(9)"
+            "Andaman & Nicobar Island(3)", "Andhra Pradesh(83)", "Arunachal Pradesh(29)",
+            "Assam(33)", "Bihar(48)", "Chandigarh(1)", "Chhattisgarh(31)", "Delhi(16)",
+            "Goa(13)", "Gujarat(37)", "Haryana(98)", "Himachal Pradesh(96)", "Jammu and Kashmir(21)",
+            "Jharkhand(25)", "Karnataka(68)", "Kerala(87)", "Ladakh(3)", "Lakshadweep(5)",
+            "Madhya Pradesh(53)", "Maharashtra(57)", "Manipur(13)", "Meghalaya(13)", "Mizoram(10)",
+            "Nagaland(9)", "Odisha(39)", "Puducherry(8)", "Punjab(96)", "Rajasthan(59)",
+            "Sikkim(9)", "Tamil Nadu(148)", "Tripura(9)", "Uttarakhand(21)", "Uttar Pradesh(77)",
+            "UT of DNH and DD(3)", "West Bengal(57)"
         ]
         year = 2024
         
