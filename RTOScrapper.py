@@ -879,7 +879,7 @@ class RTOWiseProcessor:
 
 # Usage Example
 def main():
-    processor = RTOWiseProcessor(base_download_dir=os.path.join(os.getcwd(), f"rto_2024"))
+    processor = RTOWiseProcessor(base_download_dir=os.path.join(os.getcwd(), f"rto_2023"))
     
     try:
         # Configuration
@@ -893,7 +893,7 @@ def main():
             "Sikkim(9)", "Tamil Nadu(148)", "Tripura(9)", "Uttarakhand(21)", "Uttar Pradesh(77)",
             "UT of DNH and DD(3)", "West Bengal(57)"
         ]
-        year = 2024
+        year = 2023
         
         # Process each state
         for state in states_to_process:
