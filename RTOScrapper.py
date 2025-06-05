@@ -395,7 +395,7 @@ class RTOWiseProcessor:
                     self.random_delay(0.5, 1)
                     
                     # Verify selection was successful
-                    current_selection = self.driver.find_element(By.ID, "j_idt49_label").text
+                    current_selection = self.driver.find_element(By.ID, "j_idt38_label").text
                     if state_base_name in current_selection:
                         self.log_message(f"Successfully selected state: {current_selection}")
                         return True
@@ -415,7 +415,7 @@ class RTOWiseProcessor:
                         self.random_delay(0.5, 1)
                         
                         # Verify selection
-                        current_selection = self.driver.find_element(By.ID, "j_idt49_label").text
+                        current_selection = self.driver.find_element(By.ID, "j_idt38_label").text
                         if state_base_name in current_selection:
                             self.log_message(f"JavaScript selection successful: {current_selection}")
                             return True
@@ -879,7 +879,7 @@ class RTOWiseProcessor:
 
 # Usage Example
 def main():
-    processor = RTOWiseProcessor(base_download_dir=os.path.join(os.getcwd(), f"rto_2023"))
+    processor = RTOWiseProcessor(base_download_dir=os.path.join(os.getcwd(), f"rto_2024"))
     
     try:
         # Configuration
