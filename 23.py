@@ -336,7 +336,7 @@ class RTOWiseProcessor:
         try:
             self.log_message(f"Selecting State: {state_name}")
             
-            state_dropdown = self.wait_and_find_element(By.ID, "j_idt49_label", 20, "state dropdown")
+            state_dropdown = self.wait_and_find_element(By.ID, "j_idt38_label", 20, "state dropdown")
             if not state_dropdown:
                 return False
             
@@ -360,10 +360,10 @@ class RTOWiseProcessor:
             self.log_message(f"Selecting State: {state_name}")
         
             # First find and click the state dropdown label to open the dropdown
-            state_dropdown_label = self.wait_and_scroll_to_element(By.ID, "j_idt49_label", 20, "state dropdown label")
+            state_dropdown_label = self.wait_and_scroll_to_element(By.ID, "j_idt38_label", 20, "state dropdown label")
             if not state_dropdown_label:
                 # Try alternative locators
-                state_dropdown_label = self.wait_and_scroll_to_element(By.XPATH, "//div[contains(@id, 'j_idt49_label')]//label", 5, "state dropdown alternative")
+                state_dropdown_label = self.wait_and_scroll_to_element(By.XPATH, "//div[contains(@id, 'j_idt38_label')]//label", 5, "state dropdown alternative")
                 if not state_dropdown_label:
                     self.log_message("Could not find state dropdown label")
                     return False
@@ -574,7 +574,7 @@ class RTOWiseProcessor:
         try:
             self.log_message("Clicking left refresh button")
             
-            refresh_button = self.wait_and_scroll_to_element(By.ID, "j_idt89", 20, "left refresh button")
+            refresh_button = self.wait_and_scroll_to_element(By.ID, "j_idt75", 20, "left refresh button")
             if not refresh_button:
                 self.log_message("Could not find left refresh button")
                 return False
@@ -593,7 +593,7 @@ class RTOWiseProcessor:
             self.log_message("Applying EV filters")
             
             # Click right refresh to load data
-            refresh_button = self.wait_and_find_element(By.ID, "j_idt83", 20, "right refresh button")
+            refresh_button = self.wait_and_find_element(By.ID, "j_idt70", 20, "right refresh button")
             if refresh_button:
                 self.smart_click(refresh_button, "right refresh button")
                 self.random_delay(4, 5)
